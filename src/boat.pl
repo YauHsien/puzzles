@@ -21,7 +21,7 @@ move([List,List1], History, Acc, List3) :- member(peasant, List), !,
     not(member(Stage, History)),
     move(Stage, [Stage|History], [[peasant,X]|Acc], List3).
 move([List,List1], History, Acc, List3) :- member(peasant, List1),
-    safe_to_leave(peasant, List1, List4),
+    safe_to_leave(peasant, List1, List4), !,
     Stage = [[peasant|List],List4],
     not(member(Stage, History)),
     move(Stage, [Stage|History], [[peasant]|Acc], List3).
