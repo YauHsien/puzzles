@@ -46,3 +46,30 @@ question :-
     objects(List),
     move([List,[]], Answer),
     format('~p~n', [Answer]).
+
+%%
+%% $ make boat
+%% swipl -g question,halt -l src/boat.pl
+%% % /Users/yauhsien/work/puzzles/src/boat.pl compiled 0.00 sec, 20 clauses
+%% [[peasant,sheep],[peasant],[peasant,dog],[peasant,sheep],[peasant,cabbage],[peasant],[peasant,sheep]]
+%% Yau-HsiendeMacBook-Pro:puzzles yauhsien$ swipl -l src/boat.pl
+%% % /Users/yauhsien/work/puzzles/src/boat.pl compiled 0.00 sec, 20 clauses
+%% Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.6.6)
+%% Copyright (c) 1990-2013 University of Amsterdam, VU Amsterdam
+%% SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software,
+%% and you are welcome to redistribute it under certain conditions.
+%% Please visit http://www.swi-prolog.org for details.
+%%
+%% For help, use ?- help(Topic). or ?- apropos(Word).
+%%
+%% ?- question.
+%% [[peasant,sheep],[peasant],[peasant,dog],[peasant,sheep],[peasant,cabbage],[peasant],[peasant,sheep]]
+%% true ;
+%% [[peasant,sheep],[peasant],[peasant,cabbage],[peasant,cabbage],[peasant,dog],[peasant,sheep],[peasant,cabbage],[peasant],[peasant,sheep]]
+%% true ;
+%% [[peasant,sheep],[peasant],[peasant,cabbage],[peasant,sheep],[peasant,sheep],[peasant,cabbage],[peasant,dog],[peasant,sheep],[peasant,cabbage],[peasant],[peasant,sheep]]
+%% true ;
+%% [[peasant,sheep],[peasant],[peasant,cabbage],[peasant,sheep],[peasant,dog],[peasant],[peasant,sheep]]
+%% true ;
+%% false.
+%%
