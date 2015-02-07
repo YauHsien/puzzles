@@ -52,7 +52,8 @@ question :-
 %% swipl -g question,halt -l src/boat.pl
 %% % /Users/yauhsien/work/puzzles/src/boat.pl compiled 0.00 sec, 20 clauses
 %% [[peasant,sheep],[peasant],[peasant,dog],[peasant,sheep],[peasant,cabbage],[peasant],[peasant,sheep]]
-%% Yau-HsiendeMacBook-Pro:puzzles yauhsien$ swipl -l src/boat.pl
+%%
+%% $ swipl -l src/boat.pl
 %% % /Users/yauhsien/work/puzzles/src/boat.pl compiled 0.00 sec, 20 clauses
 %% Welcome to SWI-Prolog (Multi-threaded, 64 bits, Version 6.6.6)
 %% Copyright (c) 1990-2013 University of Amsterdam, VU Amsterdam
