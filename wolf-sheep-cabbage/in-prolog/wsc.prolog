@@ -11,6 +11,20 @@ next(s, ws).
 next(s, sc).
 next(wsc, s).
 
+%  ?- consult('wolf-sheep-cabbage/in-prolog/wsc.prolog').
+%: true.
+%
+%  ?- solve(wsc,R).
+%: wsc -> s
+%: s -> ws
+%: ws -> w
+%: w -> wc
+%: R = wsc ;
+%: s -> sc
+%: sc -> c
+%: c -> wc
+%: R = wsc.
+%
 solve(wsc, Result) :-
     solve(wsc, wsc, Result).
 
